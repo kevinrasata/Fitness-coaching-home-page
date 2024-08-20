@@ -1,0 +1,481 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  color: white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 48px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.burgermenu {
+  margin: auto;
+  margin-left: 10px;
+  display: none;
+}
+
+.burgermenu img {
+  height: 30px;
+  width: 40px;
+  padding: 10px 5px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("./assets/anastase-maragos-7kEpUPB8vNk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f04a4a;
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #e03e3e;
+}
+
+/* Product Info Section */
+.info-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.info-section .arrow-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.info-section h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.info-section p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Products Section */
+.products-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.product {
+  position: relative;
+  flex: 1 1 calc(50% - 20px);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.description h3,
+.description h4 {
+  margin: 0;
+  padding: 0;
+}
+
+#coaching {
+  background-image: url("./assets/anastase-maragos-fG0p4Qh_aWI-unsplash.jpg");
+}
+
+#training-program {
+  background-image: url("./assets/anastase-maragos-FP7cfYPPUKM-unsplash.jpg");
+}
+
+#apparel {
+  background-image: url("./assets/caroline-attwood-bpPTlXWTOvg-unsplash.jpg");
+}
+
+#cook-book {
+  background-image: url("./assets/anastase-maragos-HyvE5SiKMUs-unsplash.jpg");
+}
+
+/* About Section */
+.about-section {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 80%;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-content p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+  font-size: larger;
+}
+
+#btn-2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Social Media and Newsletter Section */
+.social-media-section {
+  padding: 60px 0;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media h2 {
+  font-family: "New Amsterdam", sans-serif;
+  margin: 19px 0 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.newsletter {
+  text-align: left;
+}
+
+.newsletter p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ebe5e5;
+}
+
+#emailInput {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-transform: lowercase;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+#signUpBtn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f04a4a;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 0 5px 5px 0;
+}
+
+#signUpBtn:hover {
+  background-color: #e03e3e;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Media Queries */
+
+/* For Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+
+  .navbar .logo {
+    font-size: 40px;
+  }
+
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .info-section h1 {
+    font-size: 32px;
+  }
+
+  .info-section h4 {
+    font-size: 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .social-media-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* For Mobile Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  nav .burgermenu {
+    display: inline-block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    height: 80vh;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .info-section h1 {
+    font-size: 28px;
+  }
+
+  .info-section h4 {
+    font-size: 18px;
+  }
+
+  .info-section p {
+    font-size: 16px;
+  }
+
+  .products-section {
+    padding: 15px;
+  }
+
+  .product-card {
+    gap: 8px;
+    margin-bottom: 7px;
+  }
+
+  .product {
+    flex: 1 1 100%;
+    margin-bottom: 7px;
+    transition: none;
+  }
+
+  .product:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .about-section {
+    padding: 20px 0;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .social-media-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .newsletter p {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+}
